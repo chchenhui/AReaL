@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import click
 
+from areal.v2.cli.agent import agent
 from areal.v2.cli.training import train
 from areal.version import __version__
 
@@ -17,4 +18,5 @@ def cli() -> None:
     pass
 
 
+cli.add_command(agent)
 cli.add_command(train)
